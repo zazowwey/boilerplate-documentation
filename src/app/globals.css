@@ -776,6 +776,371 @@ code {
   letter-spacing: -0.03em;
 }
 
+/* ============================================
+   GUIDE CONTENT STYLES
+   ============================================ */
+
+.guide-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 60px;
+}
+
+.centered-content {
+  max-width: 900px;
+  text-align: left;
+}
+
+.centered-header {
+  text-align: center;
+}
+
+.centered-header .docs-header-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.centered-header .back-link {
+  margin-bottom: 2rem;
+}
+
+.guide-section {
+  margin-bottom: 3.5rem;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.guide-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.guide-section h2 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  margin-bottom: 1.25rem;
+  color: var(--foreground);
+  letter-spacing: -0.03em;
+}
+
+.guide-section h3 {
+  font-size: 1.375rem;
+  font-weight: 800;
+  margin: 1.5rem 0 0.875rem;
+  color: var(--foreground);
+  letter-spacing: -0.02em;
+}
+
+.guide-section h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin: 1.25rem 0 0.625rem;
+  color: var(--foreground);
+}
+
+.guide-section p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.guide-section ul,
+.guide-section ol {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+}
+
+.guide-section li {
+  margin-bottom: 0.625rem;
+}
+
+.guide-section strong {
+  color: var(--foreground);
+  font-weight: 700;
+}
+
+.guide-section a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
+  font-weight: 600;
+}
+
+.guide-section a:hover {
+  color: var(--accent-hover);
+}
+
+/* Checklist */
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.checklist-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.checklist-item .check {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: var(--success);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.125rem;
+}
+
+.checklist-item strong {
+  display: block;
+  margin-bottom: 0.375rem;
+  font-size: 1rem;
+}
+
+.checklist-item p {
+  margin: 0;
+  font-size: 0.9375rem;
+}
+
+/* Method Cards */
+.method-card {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.method-number {
+  flex-shrink: 0;
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.method-content {
+  flex: 1;
+}
+
+.method-content h3 {
+  margin-top: 0;
+}
+
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+}
+
+.link-button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+/* Structure Grid */
+.structure-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.structure-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.75rem;
+  text-align: center;
+}
+
+.structure-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.structure-item h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+}
+
+.structure-item p {
+  margin: 0;
+  font-size: 0.9375rem;
+}
+
+/* Step by Step */
+.step-by-step {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.step {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.75rem;
+}
+
+.step .step-number {
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.step .step-content {
+  flex: 1;
+}
+
+.step .step-content h4 {
+  margin: 0 0 0.625rem 0;
+}
+
+.step .step-content p {
+  margin-bottom: 0.5rem;
+}
+
+.step .step-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Next Steps Grid */
+.next-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.next-step-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.next-step-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.15);
+}
+
+.next-step-card h3 {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.125rem;
+  color: var(--foreground);
+}
+
+.next-step-card p {
+  margin: 0 0 1rem 0;
+  flex-grow: 1;
+  font-size: 0.9375rem;
+}
+
+.next-step-card .arrow {
+  color: var(--accent);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* FAQ */
+.faq-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.faq-item summary {
+  font-weight: 700;
+  color: var(--foreground);
+  font-size: 1rem;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.faq-item[open] summary::after {
+  content: '−';
+}
+
+.faq-item p {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border);
+}
+
 .detail-section > p {
   color: var(--text-secondary);
   line-height: 1.7;
@@ -1104,6 +1469,28 @@ code {
   
   .component-detail-wrapper {
     padding: 2rem 1.5rem;
+  }
+  
+  .guide-content {
+    padding: 2rem 1.5rem;
+  }
+  
+  .structure-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .next-steps-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .method-card {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+  
+  .step {
+    flex-direction: column;
+    padding: 1.5rem;
   }
 }
 

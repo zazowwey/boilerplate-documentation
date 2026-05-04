@@ -3,15 +3,17 @@ import Link from 'next/link';
 export default function GettingStartedPage() {
   return (
     <div className="docs-container">
-      <header className="docs-header">
-        <Link href="/docs" className="back-link">← Back to Components</Link>
-        <h1 className="docs-title">Getting Started</h1>
-        <p className="docs-subtitle">
-          Learn how to use this Webflow boilerplate in 5 minutes
-        </p>
+      <header className="docs-header centered-header">
+        <div className="docs-header-inner">
+          <Link href="/docs" className="back-link">← Back to Components</Link>
+          <h1 className="docs-title">Getting Started</h1>
+          <p className="docs-subtitle">
+            Learn how to use this Webflow boilerplate in 5 minutes
+          </p>
+        </div>
       </header>
 
-      <div className="guide-content">
+      <div className="guide-content centered-content">
         <section className="guide-section">
           <h2>What is This?</h2>
           <p>

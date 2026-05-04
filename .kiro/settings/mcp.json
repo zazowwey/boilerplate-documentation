@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "webflow": {
+      "url": "https://mcp.webflow.com/mcp",
+      "disabled": false,
+      "autoApprove": []
+    }
+  }
+}

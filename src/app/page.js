@@ -1,65 +1,145 @@
-import Image from "next/image";
+import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
+    <div className="home-container">
+      <div className="hero-section">
+        <div className="hero-badge">
+          <span className="badge-dot"></span>
+          Production Ready
+        </div>
+        <div className="hero-content">
+          <h1 className="hero-title">
+            <span className="title-line">Build Faster with</span>
+            <span className="title-line accent">Webflow Boilerplate</span>
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="hero-subtitle">
+            35 production-ready components designed for speed and flexibility. 
+            Copy, customize, and ship beautiful websites in minutes, not days.
           </p>
+          <div className="hero-buttons">
+            <Link href="/docs" className="cta-button">
+              Explore Components
+              <span className="arrow">→</span>
+            </Link>
+            <Link href="/docs/getting-started" className="cta-button secondary">
+              <span className="icon">📖</span>
+              Quick Start
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+        
+        <div className="stats-grid">
+          <div className="stat-card">
+            <div className="stat-number">35</div>
+            <div className="stat-label">Ready Components</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-number">11</div>
+            <div className="stat-label">Categories</div>
+          </div>
+          <div className="stat-card">
+            <div className="stat-number">100%</div>
+            <div className="stat-label">Customizable</div>
+          </div>
         </div>
-      </main>
+      </div>
+
+      <div className="features-section">
+        <div className="section-header">
+          <span className="section-badge">Features</span>
+          <h2 className="section-title">Everything You Need</h2>
+          <p className="section-subtitle">Built for developers who value speed without sacrificing quality</p>
+        </div>
+        <div className="features-grid">
+          <div className="feature-card">
+            <div className="feature-icon">⚡</div>
+            <h3>Instant Setup</h3>
+            <p>Copy component IDs and start building. No configuration, no setup time, just pure productivity.</p>
+          </div>
+          <div className="feature-card">
+            <div className="feature-icon">🎨</div>
+            <h3>Design System</h3>
+            <p>Consistent styling with variables and tokens. Customize colors, typography, and spacing globally.</p>
+          </div>
+          <div className="feature-card">
+            <div className="feature-icon">🔧</div>
+            <h3>API-First</h3>
+            <p>Full Webflow API integration. Modify everything programmatically with complete control.</p>
+          </div>
+          <div className="feature-card">
+            <div className="feature-icon">📱</div>
+            <h3>Responsive</h3>
+            <p>Mobile-first components that adapt beautifully to any screen size and device.</p>
+          </div>
+          <div className="feature-card">
+            <div className="feature-icon">🚀</div>
+            <h3>Production Ready</h3>
+            <p>Battle-tested components used in real projects. Ship with confidence.</p>
+          </div>
+          <div className="feature-card">
+            <div className="feature-icon">📚</div>
+            <h3>Well Documented</h3>
+            <p>Step-by-step guides for every component. Never get stuck again.</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="categories-section">
+        <div className="section-header">
+          <span className="section-badge">Components</span>
+          <h2 className="section-title">11 Component Categories</h2>
+          <p className="section-subtitle">From navigation to footers, we've got you covered</p>
+        </div>
+        <div className="categories-grid">
+          <div className="category-item">
+            <div className="category-icon">🧭</div>
+            <div className="category-name">Navigation</div>
+            <div className="category-count">3 components</div>
+          </div>
+          <div className="category-item">
+            <div className="category-icon">🎯</div>
+            <div className="category-name">Hero Sections</div>
+            <div className="category-count">3 components</div>
+          </div>
+          <div className="category-item">
+            <div className="category-icon">💬</div>
+            <div className="category-name">Testimonials</div>
+            <div className="category-count">4 components</div>
+          </div>
+          <div className="category-item">
+            <div className="category-icon">🎴</div>
+            <div className="category-name">Cards</div>
+            <div className="category-count">3 components</div>
+          </div>
+          <div className="category-item">
+            <div className="category-icon">🔘</div>
+            <div className="category-name">Buttons</div>
+            <div className="category-count">3 components</div>
+          </div>
+          <div className="category-item">
+            <div className="category-icon">📋</div>
+            <div className="category-name">Forms</div>
+            <div className="category-count">1 component</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="cta-section">
+        <div className="cta-content">
+          <h2>Ready to Build Something Amazing?</h2>
+          <p>Join developers who are shipping faster with our component library</p>
+          <div className="cta-buttons">
+            <Link href="/docs" className="cta-button">
+              Browse All Components
+              <span className="arrow">→</span>
+            </Link>
+            <Link href="/docs/api-guide" className="cta-button secondary">
+              View API Guide
+            </Link>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
